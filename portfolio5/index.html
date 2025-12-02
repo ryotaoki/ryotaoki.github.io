@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ryota Aoki </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand text-capitalize text-white d-flex align-items-center gap-2 fs-3" href="index.html"><i
+                        class="fa-solid fa-graduation-cap fs-2 text-warning"></i> gakko
+                </a>
+                <button class="navbar-toggler order-lg-2　border border-1 border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto d-flex">  
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize text-white" aria-current="page" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#service">service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">contact</a>
+                        </li>
+                        <li class="nav-item px-lg-2 login-btn">
+                            <a class="nav-link text-capitalize text-white" href="#">login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- hero -->
+        <section class="hero d-flex justify-content align-items-center position-relative py-sm-3 py-md-4 py-lg-5">
+            <div class="filter position-absolute top-0 start-0 bg-black opacity-25 w-100 h-100"></div>
+            <div class="container text-center position-relative text-white">
+                <h1 class="display-3 text-capitalize fw-semibold">learn any language with our tutors</h1>
+                <p class="fs-4 text-capitalize fw-light">our courses gives positive results</p>
+                <a href="tutor.html" class="btn btn-warning rounded px-4 py-2 text-capitalize shadow">meet our
+                    tutors</a>
+            </div>
+            <i class="fa-solid fa-sort text-white"></i>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="about py-3 py-md-4 py-lg-5">
+            <div class="container text-center">
+                <div class="service-header text-center">
+                    <h6 class="text-capitalize">we want to know us</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">about us</h2>
+                </div>
+                <div class="row g-sm-2 g-md-4 g-lg-5">
+                    <div class="col-12 col-md-5">
+                        <div class="about-image"></div>
+                    </div>
+                    <div class="about-info col-12 col-md-7 d-flex justify-content-center align-items-center">
+                        <p class="mt-3">Learning should be exciting, personal, and effective. Our mission is
+                            to connect students with passionate, experienced tutors who make every lesson count. Whether
+                            you’re aiming to master a subject, prepare for exams, or explore something new, we’re here
+                            to guide you—every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section id="service" class="service py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="service-header text-center">
+                    <h6>Services for You</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">Our Tutoring Services</h2>
+                </div>
+                <!-- this is row -->
+                <div class="row g-sm-2 g-md-4 g-lg-5">
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">One-on-One Tutoring</h3>
+                                <p>Personalized lessons tailored to your learning style and pace, ensuring maximum
+                                    understanding and progress.</p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">Group Study Sessions</h3>
+                                <p>Interactive group classes where students collaborate, share ideas, and strengthen
+                                    problem-solving skills.</p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">Exam Preparation</h3>
+                                <p>Comprehensive test prep for school exams, university entrance, and international
+                                    certifications.</p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">Language Learning</h3>
+                                <p>English, Spanish, French, and more — learn a new language with native-speaking
+                                    instructors.</p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">Homework Assistance</h3>
+                                <p>Daily help with schoolwork, ensuring students complete assignments accurately and on
+                                    time.</p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow">
+                            <div class="service-image">
+                            </div>
+                            <div class="service-info text-center p-4">
+                                <h3 class="text-capitalize">Skills Development</h3>
+                                <p>Boost critical thinking, problem-solving, and digital literacy with engaging
+                                    workshops.
+                                </p>
+                                <a href="#" class="btn btn-warning btn-lg text-capitalize">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-2 mt-md-4 mt-lg-5">
+                    <a href="#" class="btn btn-warning rounded px-4 py-2 text-capitalize shadow">View All
+                        Services</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- testimonial -->
+        <section class="testimonial py-3 py-md-4 py-lg-5 bg-secondary-subtle">
+            <div class="container">
+                <div class="service-header text-center">
+                    <h6>testominal</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">our testominal</h2>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide text-center carousel-dark"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                style="width: 150px;" />
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+                                    <h5 class="mb-3">Maria Kate</h5>
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        This platform made learning Japanese so much easier. The tutors are patient,
+                                        friendly, and really care about my progress.
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="far fa-star fa-sm"></i></li>
+                            </ul>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                                style="width: 150px;" />
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+                                    <h5 class="mb-3">John Doe</h5>
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        I went from struggling with hiragana to holding simple conversations in just
+                                        three months. Highly recommended!
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="far fa-star fa-sm"></i></li>
+                            </ul>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                                style="width: 150px;" />
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+                                    <h5 class="mb-3">Anna Deynah</h5>
+                                    <p class="text-muted">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        The lessons are fun, interactive, and tailored to my needs. I look forward to
+                                        every class!.
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="fas fa-star fa-sm"></i></li>
+                                <li><i class="far fa-star fa-sm"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="FAQ py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="service-header text-center">
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">FAQ</h2>
+                </div>
+                <!-- accordion -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="row g-sm-2 g-md-4">
+
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Which subjects do you offer tutoring for?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        We provide tutoring mainly for elementary, middle, and high school subjects
+                                        including English, French, German, Spanish,and Japanese. We also offer
+                                        support for university entrance exams and language proficiency tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        How are the lessons conducted?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lessons are conducted online via Zoom or Google Meet. After each session, we
+                                        provide a summary report including lesson details and assignments.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        How much does tutoring cost?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Our standard rate is 2,500 JPY per 60-minute session. We also offer discounted
+                                        packages for multiple sessions booked in advance.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        How do I book a lesson?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        You can book lessons through our online reservation form by selecting your
+                                        preferred date, time, and subject. Our tutors will confirm your booking within
+                                        24 hours.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        What qualifications do your tutors have?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        All tutors have at least a university degree and possess teaching experience or
+                                        relevant certifications. We conduct mock lessons and interviews to ensure high
+                                        teaching quality and communication skills.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-12 col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                        aria-controls="flush-collapseSix">
+                                        What is your cancellation policy?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Cancellations or rescheduling requests made at least 24 hours before the lesson
+                                        are free of charge. Cancellations within 24 hours of the lesson will incur a 50%
+                                        fee.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe -->
+        <section class="subscribe py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="service-header text-center">
+                    <h6>subscribe</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-3 display-6 subtitle">News letter</h2>
+                </div>
+                <form action="/" method="post">
+                    <div class="d-flex flex-column justify-content align-items-center ">
+                        <label for="email" class="form-label text-capitalize">Email</label>
+                        <input type="email" class="form-control w-50 text-center mb-3" placeholder="email address"
+                            id="email" aria-label="First name">
+                        <button type="submit" class="btn  btn-warning">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-md-4">
+        <div class="container">
+            <div class="row g-2 g-md-4 g-lg-5">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="navbar-brand text-capitalize text-white d-flex align-items-center justify-content-center justify-content-md-start gap-2 fs-3" href="#"><i
+                            class="fa-solid fa-graduation-cap fs-2 text-warning"></i>gakko</a>
+                </div>
+                <div class="col-12  col-md-4">
+                    <ul
+                        class="navbar-nav ms-auto mb-lg-0 d-flex flex-row flex-md-column gap-2 justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize text-white" aria-current="page" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-md-3">
+                    <h5 class="text-white text-center text-md-start">Subscribe to our Newsletter</h5>
+                    <form action="/" method="post" class="d-flex flex-column flex-sm-row gap-1 gap-md-2 mt-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-warning text-white">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 mb-2 mb-md-3 text-white text-center text-md-start">
+                    copyright 2025 by Gakko
+                </div>
+                <div
+                    class="col-12 col-md-6 mb-3 text-center text-md-start d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="/"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootsttrap 5.3 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

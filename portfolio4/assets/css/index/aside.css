@@ -1,0 +1,93 @@
+/* Aside Section */
+form {
+  display: inline-block;
+}
+
+#aside {
+  grid-area: aside;
+  padding: 20px 20px 20px 10px;
+
+  > form > * {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  > form > * + label {
+    margin-top: 20px;
+  }
+
+  details {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0px;
+
+    div:first-of-type {
+      margin-top: 5px;
+    }
+
+    div:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 21px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../img/sideicon/angle-down-svgrepo-com.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-left: 3px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  input[type="date"] {
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    accent-color: #000;
+    width: 24px;
+    height: 24px;
+  }
+
+  input[type="text"] {
+    background-color: #fff;
+    padding: 10px;
+    max-width: 50%;
+  }
+}
+
+@media(max-width:768px) {
+  form{
+    display: contents;
+
+  }
+}

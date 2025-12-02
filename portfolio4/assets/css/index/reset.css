@@ -1,0 +1,25 @@
+/* 
+font 
+font-family: "Lato", sans-serif;
+
+color
+#d42227;
+#000000;
+#ffffff;
+#818181;
+ */
+/* global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+form {
+  display: inline-block;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The content is for my auction site page">
+	<title>Ryota Aoki Assignment 1</title>
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/index/main.css">
+
+</head>
+
+<body>
+	<header aria-label="site header">
+		<div class="mobile-header">
+			<a class="logo mobile-logo" href="index.html">
+				<img src="assets/img/logo-1-alt.png" alt="LS Stampee logo">LS Stampee
+			</a>
+			<div class="mobile-search">
+				<form action="#" method="post">
+					<input type="text" id="search-mobile" placeholder="Search by keyword" aria-label="search">
+					<input type="submit" value="" aria-label="Search">
+				</form>
+			</div>
+		</div>
+		<input type="checkbox" id="nav-button" aria-label="burger">
+		<!-- secondary nav -->
+		<nav class="top-nav" aria-label="top nagivation">
+			<div class="flex-left">
+				<a class="logo top" href="index.html"><img src="assets/img/logo-1-alt.png" alt="LS Stampee logo">LS
+					Stampee</a>
+			</div>
+			<!-- new -->
+			<div class="flex-right">
+				<a href="#"><span>Sign in</span></a>
+
+
+				<div class="dropdown">
+					<a href="#"><span>About</span></a>
+					<div class="dropdown-list">
+						<a href="#">Philately Is Life</a>
+						<a href="#">The Duke’s Biography</a>
+						<a href="#">Family History</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="#"><span>News</span></a>
+					<div class="dropdown-list">
+						<a href="#">Stamps</a>
+						<a href="#">Auctions</a>
+						<a href="#">Bridge</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="#"><span>How It Works</span></a>
+					<div class="dropdown-list">
+						<a href="#">Profile Help</a>
+						<a href="#">How to Bid</a>
+						<a href="#">How to Follow an Auction</a>
+						<a href="#">How to Find the Desired Auction</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="#"><span>Contact</span></a>
+					<div class="dropdown-list">
+						<a href="#">United Kingdom</a>
+						<a href="#">Canada</a>
+						<a href="#">United States</a>
+						<a href="#">Australia</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Contact the Webmasters</a>
+					</div>
+				</div>
+				<a href="#"><span>term & condition</span></a>
+			</div>
+		</nav>
+		<!-- primary nav -->
+		<div class="primary-nav-flex">
+			<nav class="bottom-nav" aria-label="main nagivation">
+				<div class="bottom-flex-left">
+					<div class="dropdown">
+						<a href="#"><span>Auctions</span></a>
+						<div class="dropdown-list">
+							<a href="#">Active Auctions</a>
+							<a href="#">Archived Auctions</a>
+							<a href="#">Features Lots</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a href="#"><span>Account</span></a>
+						<div class="dropdown-list">
+							<a href="#">Become Member</a>
+							<a href="#">Sign in</a>
+							<a href="#">Your profile</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-flex-right">
+					<form class="desktop-search" action="#" method="post">
+						<input type="text" id="search" placeholder="Search by keyword" aria-label="search">
+						<input type="submit" value="" aria-label="Search">
+					</form>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="banner" id="banner" aria-label="site banner">
+		<h1>Welcome to LS Stampee</h1>
+		<p>Discover a world where history, elegance, and philately meet. Explore rare and exquisite stamps curated with the Duke’s passion and legacy in mind</p>
+	</section>
+	<main aria-label="main content">
+		<div class="container">
+			<!-- side menu -->
+			<aside id="aside" aria-label="filter sidebar">
+				<form action="#">
+					<h2>Filter By</h2>
+					<details>
+						<summary>Date of issue</summary>
+						<div>
+							<input type="date" id="date" aria-label="date">
+						</div>
+					</details>
+					<details>
+						<summary>Colors</summary>
+						<div>
+							<input type="checkbox" id="red" name="color" value="red">
+							<label for="red">Red</label>
+						</div>
+						<div>
+							<input type="checkbox" id="green" name="color" value="green">
+							<label for="green">Green</label>
+						</div>
+						<div>
+							<input type="checkbox" id="blue" name="color" value="blue">
+							<label for="blue">Blue</label>
+						</div>
+					</details>
+					<details>
+						<summary>Country of origin</summary>
+						<div>
+							<input type="checkbox" id="british" name="country" value="british">
+							<label for="british">British</label>
+						</div>
+						<div>
+							<input type="checkbox" id="usa" name="country" value="usa">
+							<label for="usa">United States</label>
+						</div>
+						<div>
+							<input type="checkbox" id="asia" name="country" value="asia">
+							<label for="asia">Asia</label>
+						</div>
+						<div>
+							<input type="checkbox" id="europe" name="country" value="europe">
+							<label for="europe">Europe</label>
+						</div>
+					</details>
+					<details>
+						<summary>Condition</summary>
+						<div>
+							<input type="checkbox" id="mint" name="condition" value="mint">
+							<label for="mint">Mint</label>
+						</div>
+						<div>
+							<input type="checkbox" id="excellent" name="condition" value="excellent">
+							<label for="excellent">Excellent</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="good" name="condition" value="good">
+							<label for="good">Good</label>
+						</div>
+						<div>
+							<input type="checkbox" id="fair" name="condition" value="fair">
+							<label for="fair">Fair</label>
+						</div>
+						<div>
+							<input type="checkbox" id="damage" name="condition" value="damage">
+							<label for="damage">Damage</label>
+						</div>
+					</details>
+					<details>
+						<summary>Dimentions</summary>
+						<div>
+							<input type="text" id="dimentionFrom" name="dimentionFrom" placeholder="from" aria-label="from">-
+							<input type="text" id="dimentionTo" name="dimentionTo" placeholder="to" aria-label="to">
+						</div>
+					</details>
+					<details>
+						<summary>Certified</summary>
+						<div>
+							<input type="checkbox" id="yes" name="certified" value="yes">
+							<label for="yes">Yes</label>
+						</div>
+						<div>
+							<input type="checkbox" id="no" name="certified" value="no">
+							<label for="no">No</label>
+						</div>
+					</details>
+				</form>
+			</aside>
+			<!-- auction -->
+			<section id="auction" aria-label="auction content">
+				<div class="grid">
+					<article class="card">
+						<picture><img src="assets/img/photos/096f4369c48210d74f07a1ef758af064.webp" alt="stamp1">
+						</picture>
+						<div class="card-info">
+							<h3>
+								Great Britain 1980 Alice Adventures in Wonderlands...
+							</h3>
+							<p>$400.00</p>
+							<p>
+								Closing: <span>3 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+					<article class="card">
+						<picture><img src="assets/img/photos/1429596776-29384-1.webp" alt="stamp2"></picture>
+						<div class="card-info">
+							<h3>
+								SG 456a 2½d Prussian blue. A pristine unmounted mint...
+							</h3>
+							<p>$300.00</p>
+							<p>
+								Closing: <span>6 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+					<article class="card">
+						<picture><img src="assets/img/photos/3057.webp" alt="stamp3"></picture>
+						<div class="card-info">
+							<h3>
+								Stamps - Great Britain - Scott# 145 - Mint Never Hinged...
+							</h3>
+							<p>$700.00</p>
+							<p>
+								Closing: <span>10 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+					<article class="card">
+						<picture><img src="assets/img/photos/British-Stamps-Coronation-George-VI.webp" alt="stamp4">
+						</picture>
+						<div class="card-info">
+							<h3>
+								Great Britain-1-GPO STAMP STITCHED BOOKLETs Q.E.11...
+							</h3>
+							<p>$100.00</p>
+							<p>
+								Closing: <span>1 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+					<article class="card">
+						<picture><img src="assets/img/photos/images-2.webp" alt="stamp5"></picture>
+						<div class="card-info">
+							<h3>
+								Great Britain lot Mint VF NH - Lakeshore Philatelics...
+							</h3>
+							<p>$2500.00</p>
+							<p>
+								Closing: <span>20 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+					<article class="card">
+						<picture><img src="assets/img/photos/download.webp" alt="stamp6"></picture>
+						<div class="card-info">
+							<h3>
+								Stamps - Great Britain - Scott# 135 - Mint Never Hinged...
+							</h3>
+							<p>$120.00</p>
+							<p>
+								Closing: <span>12 day</span>
+							</p>
+							<a class="button" href="#">Bid</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+	</main>
+		<footer id="footer" aria-label="site footer">
+		<div class="footer-flex-left">
+			<a class="logo" href="index.html"><img src="assets/img/logo-1-alt.png" alt="LS Stampee logo">LS Stampee</a>
+			<div class="footer-nav-flex">
+				<h3 class="footer-title">Countries</h3>
+				<div class="footer-dropdown-list">
+					<a href="#">United Kingdom</a>
+					<a href="#">Canada</a>
+					<a href="#">United States</a>
+					<a href="#">Australia</a>
+					<a href="#">Contact Us</a>
+					<a href="#">Contact the Webmasters</a>
+				</div>
+			</div>
+			<div class="footer-nav-flex">
+				<h3 class="footer-title">Help</h3>
+				<div class="footer-dropdown-list">
+					<a href="#">FAQ</a>
+					<a href="#">How to buy</a>
+					<a href="#">Get an estimate</a>
+					<a href="#">Payment and Shipping</a>
+				</div>
+			</div>
+			<div class="footer-nav-flex">
+				<h3 class="footer-title">Legal</h3>
+				<div class="footer-dropdown-list">
+					<a href="#">Term & Conditions</a>
+					<a href="#">Privacy policy</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-flex-right">
+			<p>Copyright © LS Stampee 2025</p>
+			<div class="icon-flex">
+				<a href="#" aria-label="Instagram"><span><img src="./assets/img/sideicon/insta-svgrepo-com.svg"
+							alt="Instagram icon"></span></a>
+				<a href="#" aria-label="Facebook"><span><img src="./assets/img/sideicon/facebook-svgrepo-com.svg"
+							alt="Facebook icon"></span></a>
+				<a href="#" aria-label="Twitter"><span><img src="./assets/img/sideicon/twitter-154-svgrepo-com.svg"
+							alt="Twitter icon"></span></a>
+				<a href="#" aria-label="Youtube"><span><img src="./assets/img/sideicon/youtube-168-svgrepo-com.svg"
+							alt="Youtube icon"></span></a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

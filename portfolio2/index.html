@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryota Aoki: Lab 4 </title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- popup window -->
+     <div class="popup-background">
+        <button class="close-btn">x</button>
+        <div class="popup-content" onclick="preventBubbling(event)">
+            <h3>our work</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut repellat praesentium, suscipit veniam maiores facere optio earum nam libero at magnam minus voluptates, sapiente nihil dicta nostrum unde dolorum?</p>
+            <iframe src="https://www.youtube.com/embed/MkA3sLyEWdU?si=8EYfuVSU0rklsMSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+     </div>
+
+    <!-- fixed-btn -->
+    <div class="fixed-btn">
+        <i class="fa-solid fa-paper-plane"></i>
+    </div>
+    <!-- header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="logo"><i class="fa-solid fa-star"></i>star anime</div>
+                <div class="burger">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <nav class="menu-holder">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">pages</a>
+                        </li>
+                        <li>
+                            <a href="#">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="banner">
+            <div class="container">
+                <h1>welcome to our animation site</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem!</p>
+                <a class="btn movie">view</a>
+            </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-header section-header">
+                    <h2 class="section-header-title">our gallery</h2>
+                    <p class="section-header-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. aveaj habeu aveaj habeu aveaj habeu aveaj habeu</p>
+                </div>
+                <div class="gallery-grid">
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <!-- <p>$500</p> -->
+                                 <!-- NEW -->
+                                <span>$500</span>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 01</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 02</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 03</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 04</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 05</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="gallery-image">
+                            <div class="gallery-price">
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <h4>gif 06</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                </div>
+                <a class="btn">more</a>
+            </div>
+        </section>
+        <!-- service -->
+        <section class="service">
+            <div class="service-bg-image">
+                <div class="service-header section-header container">
+                    <h2 class="section-header-title">our service</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service-grid">
+                    <article class="card">
+                        <img src="creativity-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>creativity</h4>
+                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="design-ear-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>design</h4>
+                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="gif-svgrepo-com (1).svg" alt="#">
+                        <div class="service-text">
+                            <h4>gif</h4>
+                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
+                        </div>
+                    </article>                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy;2024 All rights reserved | Education purposes only</p>
+    </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        AOS.init();
+
+        // when fixed-btn clicked the screen going back to top
+        $(".fixed-btn").on("click",function(){
+            $("html, body").animate({scrollTop: 0}, 600);
+        })
+
+        // the fixed-btn doesnt display when the screen is > 450
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 450){
+                // on css need to add display none
+                $(".fixed-btn").fadeIn();
+            } else {
+                $(".fixed-btn").fadeOut();
+            }
+        })
+
+        // popup video1
+        $(".movie").on("click",function(e){
+            e.preventDefault();
+            $(".popup-background").fadeIn();
+            $("body").addClass("popup-is-open");
+        })
+
+        // close popup-background
+        $(".popup-background").on("click",function(){
+            $(".popup-background").fadeOut();
+            $("body").removeClass("popup-is-open");
+        })
+
+        // only poopup-background is clickable to close
+        function preventBubbling(event){
+			event.stopPropagation();
+
+		}
+
+        // when burger is clicked display the menu holder
+        $(".burger").on("click",function(){
+            $(".menu-holder").slideToggle()
+        })
+
+
+
+
+
+      </script>
+</body>
+
+</html>

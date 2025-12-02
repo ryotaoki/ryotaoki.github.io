@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryota Aoki Assignment 1</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <!-- style -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- popup-overlay-video -->
+     <div class="popup-overlay-video">
+        <button class="close-btn">X</button>
+          <!-- popup-content -->
+        <div class="popup-content" onclick="preventBubbling(event)">
+            <h2>our video</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt illo fugit fuga facere, voluptatem, libero asperiores esse in autem facilis aspernatur harum, distinctio </p>
+            <iframe  src="https://www.youtube.com/embed/NoSw2Ef-WaA?si=KiiBYKP8ey6eZZL9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+     </div>
+      <!-- popup-overlay-map -->
+     <div class="popup-overlay-map">
+        <button class="close-btn">X</button>
+          <!-- popup-content -->
+        <div class="popup-content" onclick="preventBubbling(event)">
+            <h2>our location</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt illo fugit fuga facere, voluptatem, libero asperiores esse in autem facilis aspernatur harum, distinctio </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505145.4184837496!2d114.74189353963801!3d-8.45568235851558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246a02c3ebd17%3A0x13f472e2dfe6ed50!2z44K2IOOCouODs-ODtOOCoeODpCDjg5Pjg7zjg4Eg44Oq44K-44O844OIIOODkOODqg!5e0!3m2!1sja!2sca!4v1741707595282!5m2!1sja!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div> 
+    <!-- Headder -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        resort
+                    </a>
+                </div>
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="menu-holder">
+                   <ul class="nav-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="banner">
+            <div class="filter"></div>
+            <div class="container">
+                <h1>montana resort</h1>
+                <p>Unlock to enjoy the view of Martine</p>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="about">
+            <div class="container">
+                <div class="about-flex">
+                    <div class="about-info">
+                        <h4>about us</h4>
+                        <h2>A Luxuries Hotel with Nature</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi est quam nihil corrupti tempore optio doloribus, minus quia illo dolorum, soluta recusandae. Possimus quia quas perferendis animi ut quisquam!</p>
+                        <a href="" class="learn-btn">learn more</a>
+                    </div>
+                    <div class="about-flex-image">
+                        <div class="about-image-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"></div>
+                        <div class="about-image-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"></div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- place -->
+        <section class="place">
+            <div class="container">
+                <div class="section-header">
+                    <h4>our offiers</h4>
+                    <h2>ongoing offers</h2>
+                </div>
+                <div class="place-grid">
+                    <article class="card">
+
+                        <div class="card-image">
+                            <div class="extra-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio minus consequuntur voluptates?</p>
+                                <a href="#" class="more-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    more
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="card-info">
+                            <h3>
+                                Up to 35% savings on Club rooms and Suites
+                            </h3>
+                            <a href="#" class="book-btn">book now</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <div class="extra-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio minus consequuntur voluptates?</p>
+                                <a href="#" class="more-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    more
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>
+                                Up to 35% savings on Club rooms and Suites
+                            </h3>
+                            <a href="#" class="book-btn">book now</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <div class="extra-info">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio minus consequuntur voluptates?</p>
+                                <a href="#" class="more-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    more
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>
+                                Up to 35% savings on Club rooms and Suites
+                            </h3>
+                            <a href="#" class="book-btn">book now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- cta-video -->
+        <section class="cta-video">
+            <div class="filter"></div>
+            <div class="container">
+                <h4>montana sea view</h4>
+                <h2>Relax and Enjoy your Vacation</h2>
+                <a href="#" class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright 2025</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+
+        // burger
+        $(".burger").on("click", function(){
+            $(".menu-holder").slideToggle()
+        })
+        
+        $(".menu-holder").on("click", function (e) {
+            if (!$(e.target).closest(".nav-menu").length) {
+            $(".menu-holder").slideToggle();
+            }
+        });
+
+        // learn-btn
+        $(".learn-btn").on("click", function(e){
+            e.preventDefault();
+            $(".popup-overlay-map").fadeIn();
+            $("body").addClass("popup-is-open");
+
+        });
+
+        $(".popup-overlay-map").on("click",function(){
+            $(".popup-overlay-map").fadeOut();
+            $("body").removeClass("popup-is-open");
+        });
+
+        function preventBubbling(event){
+			event.stopPropagation();
+		}
+
+        // play-btn
+        $(".play-btn").on("click", function(e){
+            e.preventDefault();
+            $(".popup-overlay-video").fadeIn();
+            $("body").addClass("popup-is-open");
+
+        });
+
+        $(".popup-overlay-video").on("click",function(){
+            $(".popup-overlay-video").fadeOut();
+            $("body").removeClass("popup-is-open");
+        });
+
+        function preventBubbling(event){
+			event.stopPropagation();
+		}
+
+    </script>    
+</body>
+</html>

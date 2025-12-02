@@ -1,0 +1,641 @@
+/*
+color
+a:hover, burger color: #FF6663;
+footer, page header,gallery #f0ffff;
+banner background color #7979795c;
+btn:hover #ABF355;
+about #f0f8ff;
+logo, hr  i #FECC2F;
+fixed-btn #010050
+service #a5a5a562;
+gallery p, service p, section-header para #6c6c6c;
+
+font 
+h1 font-family: "Monoton", serif;
+body font-family: "Lato", serif;
+ */
+
+ /* global */
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", serif;
+}
+
+/* unable to scroll */
+body.popup-is-open{
+    height: 100%;
+    overflow-y: hidden;
+    margin-right: 15px;
+}
+
+section{
+    padding: 80px 0px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+
+a:hover{
+    color: #FF6663;
+}
+
+h1{
+    font-size: 60px;
+    font-family: "Monoton", serif;
+    color: #fff;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* footer */
+
+footer{ 
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #f0ffff;
+}
+
+footer p{
+    font-size: 14px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* fixed button */
+
+.fixed-btn{
+    width: 70px;
+    height: 70px;
+    background-color: #010050;
+    color: #FECC2F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    cursor: grab;
+    font-size: 25px;
+    transition: 0.6s;
+    z-index: 1;
+    display: none;
+    
+}
+
+.fixed-btn:hover{
+    opacity: 60%;
+}
+
+.fixed-btn i{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%) rotate(270deg);
+}
+
+/* popup */
+
+.popup-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.60);
+    display: none;
+    z-index: 3;
+    
+}
+
+.popup-content{
+    background-color: #f0ffff;
+    padding: 50px;
+    width: 80%;
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 80vh; 
+    text-align: center;
+}
+
+.popup-content h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #FECC2F;;
+}
+
+.popup-content p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.popup-content iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+/* close-btn */
+.close-btn{
+    background-color: rgba(0,0,0,0.0);
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.section-header{
+    text-align: center;
+    max-width: 500px;
+    margin: 0px auto 55px auto;
+    
+}
+
+.section-header-title{
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section-header-para{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #6c6c6c;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+    /* NEW */
+    /* new hide the over flow */
+    overflow: hidden;
+}
+
+/* header */
+
+.page-header{
+    background-color: #f0ffff;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.logo i{
+    margin-right: 5px;
+    color: #FECC2F;
+    
+}
+.burger{
+    font-size: 30px;
+    display: none;
+    color: #FF6663;
+}
+
+.menu-list{
+    display: flex;
+    gap:40px;
+    list-style: none;
+}
+
+/* banner */
+
+.banner{
+    padding: 255px 0px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/52d5fe5fe4b02172cca9d9b2/1591453008839-78PLCZBT9CIBP9NSO68X/fddccf_e5e67a3822aa4d1082174928d94544e5_mv2.gif?format=2500w);
+    background-position: center;
+    background-size: cover;
+    background-color: #7979795c;
+    background-blend-mode: multiply;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1{
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.banner p{
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    padding: 15px 35px;
+    border-radius: 7px;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: 0.5s;
+    background-color: #fff;
+    background-color: #FF6663;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: #ABF355;
+    color: #fff;
+}
+
+/* gallery */
+
+.gallery{
+    background-color: #F0FFFF;
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    margin-bottom: 55px;
+}
+
+.gallery-image{
+    background-image: url(https://media3.giphy.com/media/9Dvjn0wRJwavNemQBS/giphy.gif?cid=6c09b952hnxx3gqybyh5gpni8o9p1gsrwt0u2gq0ydkyt8fk&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* .gallery-price{
+    padding: 15px;
+} */
+
+/* NEW  price tag correct way*/ 
+
+/* .gallery-image{
+   padding: 14px;
+} */
+
+.gallery-card:nth-of-type(1) .gallery-price{
+   padding: 0px;
+   text-align: left;
+}
+
+.gallery-price span {
+    padding: 8px 14px;
+    background-color: #FECC2F; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    display: inline-block;
+    
+}
+
+/* -------------------------- */
+
+/* wrong because when the font gett increase the layoput will break */
+.gallery-price p {
+    /* this is wrong! */
+    width: 68px; 
+    padding: 5px;
+    background-color: #FECC2F; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    
+}
+
+.gallery-card:nth-of-type(2) .gallery-image{
+    background-image: url(https://i.gifer.com/embedded/download/4Bsa.gif);
+}
+
+.gallery-card:nth-of-type(3) .gallery-image{
+    background-image: url(https://media1.giphy.com/media/5xtDarpRwjxoi8MoCzK/200w.gif?cid=82a1493bv9te08nwul5ueljyz206om019iguobdbah2k5q4g&ep=v1_gifs_related&rid=200w.gif&ct=g);
+}
+
+.gallery-card:nth-of-type(4) .gallery-image{
+    background-image: url(https://media1.giphy.com/media/JSjVUhKot7GfyP5cUZ/giphy.gif?cid=6c09b9520yb8dd8eyxd9wd7nd5xtvbxp54vl1nz6pwgcvxyi&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+}
+
+.gallery-card:nth-of-type(5) .gallery-image{
+    background-image: url(https://cdn.dribbble.com/users/729829/screenshots/2712522/galshir.gif);
+}
+
+.gallery-card:nth-of-type(6) .gallery-image{
+    background-image: url(https://i.pinimg.com/originals/47/32/3f/47323f3814100312de9fd64b48d0cef5.gif);
+}
+
+.gallery-text{
+    /* padding: 15px; */
+    text-align: left;
+    padding: 20px 15px 30px;
+}
+
+.gallery-text h4{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.gallery-text p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #6c6c6c;
+}
+
+/* service */
+
+.service{
+    background-color: #ffffff;
+    padding-top: 0px;
+}
+
+.service-bg-image{
+    background-image: url(https://i.gifer.com/F3ZI.gif);
+    background-position: center;
+    background-size: cover;
+    background-color: #a5a5a562;
+    background-blend-mode: overlay;
+    padding: 90px 0px;
+    margin-bottom: 70px;
+}
+
+.service .section-header{
+    margin-bottom: 0px;
+} 
+
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+.service-grid .card{
+    box-shadow: none;
+}
+
+.card img{
+    max-width: 100%;
+    display: block;
+    height: 60px;
+    margin: 40px auto 0px;
+}
+
+.service-text{
+    padding: 15px;
+    text-align: center;
+}
+
+.service-text h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-text p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #6c6c6c;
+}
+
+/* laptop */
+
+@media only screen and (max-width: 992px) {
+
+    /* banner */
+
+    .banner h1{
+        font-size: 34px;
+    } 
+
+    .banner p{
+        font-size: 18px;
+    }
+
+    .section-header-title {
+        font-size: 33px;
+    }    
+
+    .about-text h3 {
+        font-size: 29px;
+    }    
+
+    .about-text hr {
+        max-width: 282px;
+    }
+
+    /* gallery */
+
+    .gallery{
+        padding: 80px 0px;
+    }
+}
+
+/* tablet */
+
+@media only screen and (max-width: 768px) {
+
+    /* global */
+    
+    section{
+        padding: 50px 0px;
+    }
+
+    /* banner */
+
+    .banner{
+        padding: 120px 0px;
+    }
+
+    .banner h1{
+        font-size: 32px;
+    }
+  
+    .banner p{
+        font-size: 16px;
+    }
+
+    .section-header-title{
+        font-size: 31px;
+    }
+    
+     /* gallery */
+
+     .gallery{
+        padding: 50px 0px;
+     }
+
+     .gallery-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    
+    .gallery-text p{
+        font-size: 17px;
+    }
+
+    /* service */
+
+    .service-bg-image {
+        padding: 60px 0px;
+        margin-bottom: 50px;
+    }
+
+    .service-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    .service-grid .card{
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+    }
+
+    .service-text p{
+        font-size: 17px;
+    }    
+}
+
+/* phone */
+
+@media only screen and (max-width: 576px) {
+    
+    /* gobal */ 
+
+    section{
+        padding: 40px 0px;
+    }
+
+    /* nav bar */
+
+    .burger{
+        display: block;
+    }
+
+    .page-header{
+        position: relative;
+    }
+
+    .menu-holder{
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        right: 0;
+        padding: 20px 40px;
+        text-align: center;
+        
+        
+    }
+
+    .menu-list{
+        /* this isquestion becaause it works on responsice but it doesnt displaay on full screen */
+        /* flex-direction: column;
+        gap: 20px; */
+        display: block;
+    }
+
+    .menu-list li{
+        margin-bottom: 20px;
+    }
+
+    .menu-list li:nth-of-type(5){
+        margin-bottom: 0px;
+    }
+
+    .menu-list a:hover{
+        background-color: #010050;
+        color: #fff;
+    }
+
+
+    /* banner */
+
+    .banner{
+        padding: 100px 0px;
+    }
+
+    .banner h1{
+        font-size: 29px;
+    }
+
+    .banner p{
+        font-size: 15px;
+    }
+
+    .section-header{
+        margin-bottom: 40px;
+    }
+
+    .section-header-title{
+        font-size: 27px;
+    }
+    
+     /* gallery */
+
+     .gallery{
+        padding: 40px 0px;
+     }
+
+     .gallery-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* service */
+
+    .service-bg-image {
+        margin-bottom: 45px;
+    }
+   
+    .service-grid{
+        grid-gap: 20px;
+    }
+}
+
+
+
+
+
+
+

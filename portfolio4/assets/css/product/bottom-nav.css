@@ -1,0 +1,84 @@
+/* Bottom Navigation */
+
+.bottom-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &>a {
+    padding: 5px 10px;
+  }
+}
+
+.bottom-flex-left {
+  display: flex;
+  gap: 28px;
+
+  span {
+    font-size: 28px;
+  }
+
+  & .dropdown div {
+    border: none;
+    left: 0;
+    top: 100%;
+    width: max-content;
+
+    & a {
+      font-size: 25px;
+    }
+  }
+}
+
+.bottom-flex-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  gap: 30px;
+
+  & img {
+    max-width: 40px;
+  }
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  position: relative;
+
+  & input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+
+  & input[type="submit"] {
+    width: 40px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    background-image: url("../../img/sideicon/search-svgrepo-com.svg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bottom-flex-left{
+    gap: 10px;
+  }
+
+  form{
+    &  input[type="text"] {
+    width: auto;
+    }   
+  }
+}

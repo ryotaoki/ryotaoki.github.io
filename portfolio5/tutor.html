@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ryota Aoki </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand text-capitalize text-white d-flex align-items-center gap-2 fs-3"
+                    href="index.html"><i class="fa-solid fa-graduation-cap fs-2 text-warning"></i> gakko</a>
+                <button class="navbar-toggler order-lg-2 border border-1 border-white" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize text-white" aria-current="page" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">contact</a>
+                        </li>
+                        <li class="nav-item px-lg-2 login-btn">
+                            <a class="nav-link text-capitalize text-white" href="#">login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- hero-tutor -->
+        <section class="tutor-hero d-flex justify-content align-items-center position-relative py-3 py-md-4 py-lg-5">
+            <div class="filter position-absolute top-0 start-0 bg-black opacity-25 w-100 h-100"></div>
+            <div class="container text-center position-relative text-white">
+                <h1 class="display-3 text-capitalize fw-semibold">find your tutor</h1>
+                <p class="fs-5 fw-light">Please enter the relevant information into the sections below.</p>
+                <form class="row g-3 align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername">name of tutor</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="name of tutor">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label class="visually-hidden" for="inlineFormSelectPref">Subjects</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Subjects</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="German">German</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="online">
+                            <label class="form-check-label" for="inlineRadio1">Online</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="inPerson">
+                            <label class="form-check-label" for="inlineRadio2">In Person</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <button type="submit" class="btn btn-primary w-50 tutor-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- tutor list -->
+        <section class="list-tutor py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="tutor-header text-center">
+                    <h6>Services for You</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">list of our tutors</h2>
+                </div>
+                <!-- this is row -->
+                <div class="row g-sm-2 g-md-4 g-lg-5">
+                    <!-- card -->
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4 d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">Emma Johnson</h3>
+                                    <p class="text-muted small">English • 5+ years experience</p>
+                                    <p class="">Specializes in English grammar and conversational skills for all levels.
+                                    </p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#emmaModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4  d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">Olivia Smith</h3>
+                                    <p class="text-muted small">Spanish/ESL • 6+ years experience</p>
+                                    <p>Improves fluency and grammar in Spanish and English as a second language.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#oliviaModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4  d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">Daniel Williams</h3>
+                                    <p class="text-muted small">English • 10+ years experience</p>
+                                    <p>Teaches advanced English writing, speaking, and academic preparation.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#danielModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4 d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">Michael Brown</h3>
+                                    <p class="text-muted small">French • 7+ years experience</p>
+                                    <p>Focuses on French grammar, conversation, and comprehension for beginners to
+                                        intermediate.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#michealModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4 d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">James Miller</h3>
+                                    <p class="text-muted small">German • 8+ years experience</p>
+                                    <p>Teaches German conversation, grammar, reading, and writing for all levels.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#jamesModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="shadow h-100 d-flex flex-column">
+                            <div class="tutor-image flex-shrink-0"></div>
+                            <div class="tutor-info text-center p-4 d-flex flex-column justify-content-start">
+                                <div>
+                                    <h3 class="text-capitalize mb-1">Christopher Davis</h3>
+                                    <p class="text-muted small">Japanese • 5+ years experience</p>
+                                    <p>Teaches Japanese reading, writing, and conversational skills from beginner to
+                                        advanced.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-warning btn-lg text-capitalize">Book Now</a>
+                                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#christopherModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Emma Johnson -->
+                <div class="modal fade" id="emmaModal" tabindex="-1" aria-labelledby="emmaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="emmaModalLabel">Emma Johnson</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-1 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 BA in English Literature – University of London</li>
+                                            <li>📜 TESOL Certified</li>
+                                            <li>🌍 Specializes in Grammar & Conversational English</li>
+                                        </ul>
+                                        <p>Emma has over 5 years of experience teaching English to students of all ages.
+                                            Her lessons are engaging, interactive, and tailored to each student's
+                                            learning style.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Fri, 9:00 AM - 6:00 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: English, Grammar, Conversation <br>
+                                            Experience: 5+ years | Students taught: 200+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Olivia Smith -->
+                <div class="modal fade" id="oliviaModal" tabindex="-1" aria-labelledby="oliviaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="oliviaModalLabel">Olivia Smith</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-2 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 BA in Spanish – University of Madrid</li>
+                                            <li>📜 CELTA Certified</li>
+                                            <li>🌍 Specializes in Conversational Spanish & ESL</li>
+                                        </ul>
+                                        <p>Olivia has 7+ years of experience helping students improve their Spanish and
+                                            English. Her lessons focus on speaking and comprehension.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Fri, 10:00 AM - 7:00 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: Spanish, ESL, Conversation <br>
+                                            Experience: 7+ years | Students taught: 150+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Daniel Williams -->
+                <div class="modal fade" id="danielModal" tabindex="-1" aria-labelledby="danielModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="danielModalLabel">Daniel Williams</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-3 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 MA in English Literature – Cambridge University</li>
+                                            <li>📜 Certified English Language Instructor</li>
+                                            <li>🌍 Specializes in Academic Writing, Public Speaking & Exam Prep</li>
+                                        </ul>
+                                        <p>Daniel has 10+ years of teaching English. He helps students excel in academic
+                                            writing, improve speaking fluency, and prepare for international exams.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Sat, 8:00 AM - 5:00 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: English Writing, Speaking, Academic Prep <br>
+                                            Experience: 10+ years | Students taught: 300+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Micheal Brown -->
+                <div class="modal fade" id="michealModal" tabindex="-1" aria-labelledby="michaelModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="michaelModalLabel">Micheal Brown</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-4 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 MA in French Linguistics – Sorbonne University</li>
+                                            <li>📜 Certified French Language Instructor</li>
+                                            <li>🌍 Specializes in Grammar, Conversation & Comprehension</li>
+                                        </ul>
+                                        <p>Michael has 7+ years of teaching French. He helps students build confidence
+                                            in
+                                            speaking, understand grammar deeply, and improve comprehension skills.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Fri, 9:00 AM - 5:00 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: French Grammar, Conversation, Comprehension <br>
+                                            Experience: 7+ years | Students taught: 150+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for James Miller -->
+                <div class="modal fade" id="jamesModal" tabindex="-1" aria-labelledby="jamesModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="jamesModalLabel">James Miller</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-5 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 MA in German Linguistics – University of Berlin</li>
+                                            <li>📜 Certified German Language Instructor</li>
+                                            <li>🌍 Specializes in Conversation, Grammar, Reading & Writing</li>
+                                        </ul>
+                                        <p>James has 8+ years of teaching German to students worldwide. His classes
+                                            focus on
+                                            improving fluency, grammar accuracy, and cultural understanding through
+                                            interactive lessons.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Fri, 9:30 AM - 5:30 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: German Conversation, Grammar, Reading, Writing <br>
+                                            Experience: 8+ years | Students taught: 200+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Christopher Davis -->
+                <div class="modal fade" id="christopherModal" tabindex="-1" aria-labelledby="christopherModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="w-100 text-center">
+                                    <h1 class="modal-title fs-5" id="christopherModalLabel">Christopher Davis</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="tutor-image tutor-image-6 col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled my-3">
+                                            <li>🎓 BA in Japanese Language & Literature – University of Tokyo</li>
+                                            <li>📜 Certified Japanese Language Instructor</li>
+                                            <li>🌍 Specializes in Japanese reading, writing & conversation</li>
+                                        </ul>
+                                        <p>Christopher has 5+ years of experience teaching Japanese to students from
+                                            beginner to advanced.
+                                            He focuses on improving language skills through practical conversation and
+                                            cultural insights.</p>
+                                        <p class="fw-bold text-primary">Available: Mon - Fri, 10:00 AM - 6:00 PM</p>
+                                        <p class="text-muted small">
+                                            Subjects: Japanese Reading, Writing, Conversation <br>
+                                            Experience: 5+ years | Students taught: 100+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-warning text-capitalize">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-2 mt-md-4 mt-lg-5">
+                    <a href="#" class="btn btn-warning rounded px-4 py-2 text-capitalize shadow">view all
+                        tutors</a>
+                </div>
+            </div>
+        </section>
+        <!-- Price and plan -->
+        <section class="price-plan py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="price-plan-header text-center">
+                    <h6>Flexible plans for every learner</h6>
+                    <h2 class="text-capitalize mb-4 mb-md-5 display-6 subtitle">Price and Plan</h2>
+                </div>
+
+                <div class="row g-sm-2 g-md-4 g-lg-5 align-items-stretch">
+                    <!-- Basic Plan -->
+                    <div class="price-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="card shadow p-3 h-100 d-flex flex-column justify-content-between">
+                            <div class="price text-center d-flex flex-column h-100 justify-content-between">
+                                <div>
+                                    <h5>Basic</h5>
+                                    <h2 class="fw-bold">$50<span class="fs-6">/month</span></h2>
+                                    <p class="text-capitalize">For beginners</p>
+                                    <p class="text-muted">Perfect for occasional learners who need help now and then.
+                                    </p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>4 sessions per month</li>
+                                        <li>Flexible scheduling</li>
+                                        <li>Choose your tutor</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning text-capitalize mt-3">Choose Basic</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Standard Plan -->
+                    <div class="price-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="card shadow p-3 border-primary h-100 d-flex flex-column justify-content-between">
+                            <div class="price text-center d-flex flex-column h-100 justify-content-between">
+                                <div>
+                                    <h5 class="text-primary">Standard</h5>
+                                    <h2 class="fw-bold">$150<span class="fs-6">/month</span></h2>
+                                    <p class="text-capitalize">Best value</p>
+                                    <p class="text-muted">Great for regular learners who want consistent progress.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>12 sessions per month</li>
+                                        <li>Priority scheduling</li>
+                                        <li>Choose your tutor</li>
+                                        <li>Progress tracking</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-primary text-capitalize mt-3">Choose Standard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Premium Plan -->
+                    <div class="price-card col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="card shadow p-3 h-100 d-flex flex-column justify-content-between">
+                            <div class="price text-center d-flex flex-column h-100 justify-content-between">
+                                <div>
+                                    <h5 class="text-warning">Premium</h5>
+                                    <h2 class="fw-bold">$300<span class="fs-6">/month</span></h2>
+                                    <p class="text-capitalize">For serious learners</p>
+                                    <p class="text-muted">Ideal for dedicated learners who want maximum results.</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>Unlimited sessions</li>
+                                        <li>1-on-1 coaching</li>
+                                        <li>Dedicated tutor</li>
+                                        <li>Progress reports</li>
+                                        <li>24/7 support</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-warning text-capitalize mt-3">Choose Premium</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-md-4">
+        <div class="container">
+            <div class="row g-2 g-md-4 g-lg-5">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="navbar-brand text-capitalize text-white d-flex align-items-center justify-content-center justify-content-md-start gap-2 fs-3"
+                        href="#"><i class="fa-solid fa-graduation-cap fs-2 text-warning"></i>gakko</a>
+                </div>
+                <div class="col-12  col-md-4">
+                    <ul
+                        class="navbar-nav ms-auto mb-lg-0 d-flex flex-row flex-md-column gap-2 justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize text-white" aria-current="page" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white" href="#">login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-md-3">
+                    <h5 class="text-white text-center text-md-start">Subscribe to our Newsletter</h5>
+                    <form action="/" method="post" class="d-flex flex-column flex-sm-row gap-1 gap-md-2 mt-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-warning text-white">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 mb-2 mb-md-3 text-white text-center text-md-start">
+                    copyright 2025 by Gakko
+                </div>
+                <div
+                    class="col-12 col-md-6 mb-3 text-center text-md-start d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="/"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootsttrap 5.3 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+</html>

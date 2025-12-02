@@ -1,0 +1,260 @@
+/* color */
+/* #0056b3 #E2E3E5 #ffc107 #f8f9fa #212529 */
+/* font */
+/* font-family: "Lato", sans-serif; */
+
+/* less than 576px */
+/* global */
+
+body {
+  font-family: "Lato", sans-serif !important;
+  background-color: #f8f9fa;
+}
+
+footer i, header i {
+  font-size: 22px;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #0056b3 !important;
+}
+
+.nav-link:hover{
+  color: #ffc107 !important;
+}
+
+footer {
+  background-color: #0056b3;
+}
+
+main {
+  padding-top: 56px;
+}
+
+/* animation */
+
+.fa-sort {
+    font-size: 30px;
+    animation: 1.5s updown infinite alternate;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+}
+
+@keyframes updown {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* hero */
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1653276071161-379c70560951?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  min-height: calc(58vh - 56px); 
+}
+
+.hero p {
+  font-size: 17px;
+}
+
+/* about */
+.about {
+  background-color: #E2E3E5;
+}
+
+.about-image {
+  background-image: url(https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  height: 250px; 
+}
+
+.about-info p {
+  font-size: 18px !important;
+}
+
+/* service */
+.service-image {
+  background-position: center;
+  background-size: cover;
+  height: 200px; 
+}
+
+.service-card:nth-child(1) .service-image {
+  background-image: url(https://clubztutoring.com/wp-content/uploads/2024/01/One-on-One-Tutoring.jpg);
+}
+.service-card:nth-child(2) .service-image {
+  background-image: url(https://eccles.utah.edu/wp-content/uploads/2015/04/Study-Group-web.jpeg);
+}
+.service-card:nth-child(3) .service-image {
+  background-image: url(https://images.pexels.com/photos/4778611/pexels-photo-4778611.jpeg?cs=srgb&dl=pexels-cottonbro-4778611.jpg&fm=jpg);
+}
+.service-card:nth-child(4) .service-image {
+  background-image: url(https://www.amacad.org/sites/default/files/media/images/iStock-478438526.jpg);
+}
+.service-card:nth-child(5) .service-image {
+  background-image: url(https://media.istockphoto.com/id/1006545730/photo/mother-helping-son-with-homework-sitting-at-desk-in-bedroom.jpg?s=612x612&w=0&k=20&c=tmEoLAjOdLFVr9pxAWvayZfAB1xKFu8ntSTrrJ3hf3w=);
+}
+.service-card:nth-child(6) .service-image {
+  background-image: url(https://mns.edu.eg/wp-content/uploads/2024/01/medium-shot-teen-portrait-with-graduation-cap-scaled.webp);
+}
+
+/* FAQ */
+.accordion-button:not(.collapsed) {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 204, 0, 0.5);
+  border-color: #ffcc00;
+}
+
+.accordion-button:hover {
+  background-color: #ffd633;
+  color: #000;
+}
+
+/* sucbscribe */
+.subscribe {
+  background-color: #E2E3E5;
+}
+
+/* tutor.html */
+
+/* tutor-hero */
+
+.tutor-hero {
+  background-image: url(https://images.unsplash.com/photo-1653276071161-379c70560951?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  min-height: calc(50vh - 56px); 
+}
+
+/* tutor */
+
+.tutor-image {
+  background-position: center;
+  background-size: cover;
+  height: 350px; 
+}
+
+.tutor-card:nth-child(1) .tutor-image, .tutor-image-1 {
+  background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.tutor-card:nth-child(2) .tutor-image, .tutor-image-2 {
+  background-image: url(https://images.unsplash.com/photo-1699899657680-421c2c2d5064?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.tutor-card:nth-child(3) .tutor-image, .tutor-image-3 {
+  background-image: url(https://images.unsplash.com/photo-1623184663796-f0eb7e46d6ab?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.tutor-card:nth-child(4) .tutor-image, .tutor-image-4 {
+  background-image: url(https://images.unsplash.com/photo-1718392372853-fa38c8ff37c8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.tutor-card:nth-child(5) .tutor-image, .tutor-image-5 {
+  background-image: url(https://images.unsplash.com/photo-1561457900-729916ff6d6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.tutor-card:nth-child(6) .tutor-image, .tutor-image-6 {
+  background-image: url(https://images.unsplash.com/photo-1755140302411-9a7a9f523c1e?q=80&w=1047&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.price-plan{
+  background-color: #E2E3E5;
+}
+
+/* phone */
+
+@media only screen and (min-width: 576px) {
+
+  .hero {
+    min-height: calc(68vh - 56px);
+  }
+
+  .tutor-hero p{
+    font-size: 21px !important;
+  }
+
+  .fa-sort {
+      font-size: 35px;
+  }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 45px !important;
+  }
+
+  .hero {
+    min-height: calc(85vh - 56px);
+  }
+
+  .fa-sort {
+      font-size: 40px;
+  }
+
+  .tutor-hero p{
+    font-size: 22px !important;
+  }
+
+  .tutor-btn{
+    width: 75% !important;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+
+  .about-info p {
+    font-size: 22px !important;
+  }
+
+  .service-image {
+    height: 270px;
+  }
+}
+
+/* laptop */
+
+@media only screen and (min-width: 992px) {
+
+  h1 {
+    font-size: 50px !important;
+  }
+
+  .hero {
+    min-height: calc(100vh - 56px);
+  }
+
+  .tutor-hero p{
+    font-size: 23px !important;
+  }
+
+  .fa-sort {
+    font-size: 50px;
+  }
+
+  .about-image {
+    height: 500px;
+  }
+
+  .about-info p {
+    font-size: 25px !important;
+  }
+
+  .service-image {
+    height: 300px;
+  }
+}
