@@ -313,7 +313,7 @@ footer p{
 }
 
 .gallery-image{
-    background-image: url(./photo/Montana\ Resort.png);
+    background-image: url(./photo/MontanaResort.png);
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -347,7 +347,7 @@ footer p{
 }
 
 .gallery-card:nth-of-type(2) .gallery-image{
-    background-image: url(./photo/Star\ Anime.png);
+    background-image: url(./photo/StarAnime.png);
 }
 
 .gallery-card:nth-of-type(3) .gallery-image{
@@ -355,7 +355,7 @@ footer p{
 }
 
 .gallery-card:nth-of-type(4) .gallery-image{
-    background-image: url(./photo/LS\ Stampee.png);
+    background-image: url(./photo/LSStampee.png);
 }
 
 .gallery-card:nth-of-type(5) .gallery-image{
