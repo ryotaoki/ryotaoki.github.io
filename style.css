@@ -282,6 +282,52 @@ footer p{
     color: #fff;
 }
 
+/* about */
+
+.about{
+    background-color: #f0f8ff;
+}
+
+.about-flex-parent{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-image{
+    width: 50%;
+    height: 500px;
+    background-image: url(./photo/RyotaAoki.JPG);
+    background-position: center;
+    background-size:cover;
+}
+
+.about-text{
+    width: 50%;
+}
+
+.about-text h3{
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.about-text hr{
+    margin-bottom: 20px;
+    max-width: 327px;
+    border: 1px solid #FECC2F;
+}
+
+.about-text p{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-text p:nth-of-type(2){
+    margin-bottom: 0px;
+}
+
+
 /* gallery */
 
 .gallery{
@@ -515,6 +561,41 @@ footer p{
         font-size: 17px;
     }
 
+    /* about */
+
+     .about-header{
+        margin-bottom: 35px;
+     }
+
+     .about-flex-parent{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-image{
+        width: 100%;
+        height: 380px;
+        background-size: cover;
+    }
+    
+    .about-text{
+        width: 100%;
+        text-align: center;
+    } 
+    .about-text h3{
+        font-size: 26px;
+    }
+
+    .about-text hr{
+        margin: 0 auto 20px;
+        max-width: 251px;
+    }
+
+    .about-text p{
+        font-size: 18px;
+    }
+
+
     /* service */
 
     .service-bg-image {
@@ -621,6 +702,29 @@ footer p{
      .gallery-grid{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
+    }
+
+    /* about */
+
+     .about-header{
+        margin-bottom: 27px;
+     }
+
+     .about-flex-parent{
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .about-text h3{
+        font-size: 23px;
+    }
+
+    .about-text hr{
+        max-width: 225px;
+    }
+
+    .about-text p{
+        font-size: 16px;
     }
 
     /* service */
