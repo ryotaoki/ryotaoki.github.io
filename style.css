@@ -245,7 +245,7 @@ footer p{
 
 .banner{
     padding: 255px 0px;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/52d5fe5fe4b02172cca9d9b2/1591453008839-78PLCZBT9CIBP9NSO68X/fddccf_e5e67a3822aa4d1082174928d94544e5_mv2.gif?format=2500w);
+    background-image: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
     background-size: cover;
     background-color: #7979795c;
@@ -290,6 +290,7 @@ footer p{
     padding: 120px 0px;
 }
 
+
 .gallery-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -297,8 +298,22 @@ footer p{
     margin-bottom: 55px;
 }
 
+/* .gallery-card{
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-card:hover{
+    border-color: #FECC2F;
+   
+} */
+
+.gallery-card-link{
+    display: block;
+}
+
 .gallery-image{
-    background-image: url(https://media3.giphy.com/media/9Dvjn0wRJwavNemQBS/giphy.gif?cid=6c09b952hnxx3gqybyh5gpni8o9p1gsrwt0u2gq0ydkyt8fk&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-image: url(./photo/Montana\ Resort.png);
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -307,16 +322,6 @@ footer p{
     align-items: flex-start;
     padding: 20px;
 }
-
-/* .gallery-price{
-    padding: 15px;
-} */
-
-/* NEW  price tag correct way*/ 
-
-/* .gallery-image{
-   padding: 14px;
-} */
 
 .gallery-card:nth-of-type(1) .gallery-price{
    padding: 0px;
@@ -332,11 +337,7 @@ footer p{
     
 }
 
-/* -------------------------- */
-
-/* wrong because when the font gett increase the layoput will break */
 .gallery-price p {
-    /* this is wrong! */
     width: 68px; 
     padding: 5px;
     background-color: #FECC2F; 
@@ -346,19 +347,19 @@ footer p{
 }
 
 .gallery-card:nth-of-type(2) .gallery-image{
-    background-image: url(https://i.gifer.com/embedded/download/4Bsa.gif);
+    background-image: url(./photo/Star\ Anime.png);
 }
 
 .gallery-card:nth-of-type(3) .gallery-image{
-    background-image: url(https://media1.giphy.com/media/5xtDarpRwjxoi8MoCzK/200w.gif?cid=82a1493bv9te08nwul5ueljyz206om019iguobdbah2k5q4g&ep=v1_gifs_related&rid=200w.gif&ct=g);
+    background-image: url(./photo/TheBakeryShop.png);
 }
 
 .gallery-card:nth-of-type(4) .gallery-image{
-    background-image: url(https://media1.giphy.com/media/JSjVUhKot7GfyP5cUZ/giphy.gif?cid=6c09b9520yb8dd8eyxd9wd7nd5xtvbxp54vl1nz6pwgcvxyi&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+    background-image: url(./photo/LS\ Stampee.png);
 }
 
 .gallery-card:nth-of-type(5) .gallery-image{
-    background-image: url(https://cdn.dribbble.com/users/729829/screenshots/2712522/galshir.gif);
+    background-image: url(./photo/Gakko.png);
 }
 
 .gallery-card:nth-of-type(6) .gallery-image{
