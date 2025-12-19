@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,35 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- popup window -->
-     <div class="popup-background">
+    <div class="popup-background">
         <button class="close-btn">x</button>
         <div class="popup-content" onclick="preventBubbling(event)">
             <h3>our work</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut repellat praesentium, suscipit veniam maiores facere optio earum nam libero at magnam minus voluptates, sapiente nihil dicta nostrum unde dolorum?</p>
-            <iframe src="https://www.youtube.com/embed/MkA3sLyEWdU?si=8EYfuVSU0rklsMSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut repellat praesentium, suscipit veniam
+                maiores facere optio earum nam libero at magnam minus voluptates, sapiente nihil dicta nostrum unde
+                dolorum?</p>
+            <iframe src="https://www.youtube.com/embed/MkA3sLyEWdU?si=8EYfuVSU0rklsMSE" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-     </div>
+    </div>
 
     <!-- fixed-btn -->
     <div class="fixed-btn">
@@ -56,7 +65,7 @@
                             <a href="#">blog</a>
                         </li>
                         <li>
-                            <a href="#">contact</a>
+                            <a href="mailto:ryotaoki0@gmail.com">ryotaoki0@gmail.com</a>
                         </li>
                     </ul>
                 </nav>
@@ -72,6 +81,103 @@
                 <a class="btn movie">view</a>
             </div>
         </section>
+        <!-- Frontend gallery -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="gallery-header section-header">
+                    <h2 class="section-header-title">Frontend Projects</h2>
+                    <p class="section-header-para">My Frontend Web Designs</p>
+                </div>
+                <div class="gallery-grid">
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio1/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>Montana Resort</h4>
+                            <p>Theme - Resort/Vacation Platform</p>
+                            <p>HTML/CSS/Jquery/AOS/Responsive</p>
+
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio2/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>Star Anime</h4>
+                            <p>Theme - Mutimedia Platform</p>
+                            <p>HTML/CSS/Jquery/AOS/Responsive</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio3/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>The Bakery Shop</h4>
+                            <p>Theme - Local Business Platform</p>
+                            <p>HTML/CSS/Jquery/Bootstrap/Slick Slider/Fancy Box</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio4/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>LS Stampee</h4>
+                            <p>Theme - Auction / E Commence Platform</p>
+                            <p>HTML/CSS/Responsive</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio5/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>Gakko</h4>
+                            <p>Theme - Online Service Platform</p>
+                            <p>HTML/CSS/Bootstrap</p>
+                        </div>
+                    </article>
+                    <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <a href="./portfolio6/" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
+                            </div>
+                        </a>
+                        <div class="gallery-text">
+                            <h4>Spelling Bees</h4>
+                            <p>Theme - Game </p>
+                            <p>HTML/CSS/React/TypeScript</p>
+                        </div>
+                    </article>
+                </div>
+                <a class="btn" href="https://github.com/ryotaoki/ryotaoki.github.io">Repository</a>
+            </div>
+        </section>
         <!-- about -->
         <section class="about">
             <div class="container">
@@ -83,59 +189,61 @@
                     <div class="about-text">
                         <h3>Hi I am Ryota Aoki</h3>
                         <hr>
-                        <p>I'm originally from japan and live in Montreal, Canada. I'm always facinated to see flow of the code and learning programing languages :)</p>
-                        <a class="btn" href="./cv/Ryota Aoki resume .pdf">CV</a>
-                        <a class="btn" href="https://www.linkedin.com/in/ryota-aoki-2953921a0/">LinkedIn</a>
-                        <a class="btn" href="https://github.com/ryotaoki">Github</a>
+                        <p>I'm originally from Japan and live in Montreal, Canada. I'm always fascinated to see the flow
+                            of code and to learn programming languages. :)
+                        </p>
+                        <a class="btn about-btn" href="./cv/RyotaAokiResume.pdf">CV</a>
+                        <a class="btn about-btn" href="https://www.linkedin.com/in/ryota-aoki-2953921a0/">LinkedIn</a>
+                        <a class="btn about-btn" href="https://github.com/ryotaoki">Github</a>
                     </div>
                     <div class="about-image"></div>
                 </div>
             </div>
         </section>
-        <!-- gallery -->
+        <!-- Backend gallery -->
         <section id="gallery" class="gallery">
             <div class="container">
                 <div class="gallery-header section-header">
-                    <h2 class="section-header-title">Projects</h2>
-                    <p class="section-header-para">My Frontend Web Designs</p>
+                    <h2 class="section-header-title">Backend Projects</h2>
+                    <p class="section-header-para">My Backend Projects</p>
                 </div>
                 <div class="gallery-grid">
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                        <a href="./portfolio1/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="http://ryotaoki-portfolio.infinityfreeapp.com/?i=1" class="gallery-card-link">
+                            <div class="gallery-image backend-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
-                            <h4>Montana Resort</h4>
-                            <p>Theme - Resort/Vacation Platform</p>
-                            <p>HTML/CSS/Jquery/AOS/Responsive</p>
-                            
+                            <h4>Pet House</h4>
+                            <p>Theme - Animal Adoption Platform</p>
+                            <p>HTML/CSS/PHP/Responsive</p>
+
                         </div>
                     </article>
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                          <a href="./portfolio2/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="http://ryotaoki-foodsite.infinityfreeapp.com" class="gallery-card-link">
+                            <div class="gallery-image backend-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
-                            <h4>Star Anime</h4>
-                            <p>Theme - Mutimedia Platform</p>
-                            <p>HTML/CSS/Jquery/AOS/Responsive</p>
+                            <h4>Food Site</h4>
+                            <p>Theme - Local Business Platform</p>
+                            <p>HTML/CSS/PHP/WordPress</p>
                         </div>
                     </article>
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                           <a href="./portfolio3/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="./portfolio3/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
                             <h4>The Bakery Shop</h4>
@@ -144,12 +252,12 @@
                         </div>
                     </article>
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                           <a href="./portfolio4/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="./portfolio4/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
                             <h4>LS Stampee</h4>
@@ -158,12 +266,12 @@
                         </div>
                     </article>
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                          <a href="./portfolio5/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="./portfolio5/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
                             <h4>Gakko</h4>
@@ -172,12 +280,12 @@
                         </div>
                     </article>
                     <article class="card gallery-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                          <a href="./portfolio3/index.html" class="gallery-card-link">
-                        <div class="gallery-image">
-                            <div class="gallery-price">
-                                
+                        <a href="./portfolio3/index.html" class="gallery-card-link">
+                            <div class="gallery-image">
+                                <div class="gallery-price">
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                         <div class="gallery-text">
                             <h4>gif 06</h4>
@@ -188,7 +296,7 @@
                 <a class="btn" href="https://github.com/ryotaoki/ryotaoki.github.io">Repository</a>
             </div>
         </section>
-        
+
         <!-- service -->
         <section class="service">
             <div class="service-bg-image">
@@ -199,26 +307,66 @@
             <div class="container">
                 <div class="service-grid">
                     <article class="card">
+                        <img src="tools-drill-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>Softwares</h4>
+                            <p>Adobe Creative Clouds</p>
+                            <p>Photoshop / Illustrator / Premiere Pro</p>
+                            <p>Figma</p>
+                            <p>Trello</p>
+                            <p>Visual Studio Code</p>
+                            <p>MS Office</p>
+                            <p>Github</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="programming-monitor-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>Frontend</h4>
+                            <p>HTML 5/CSS</p>
+                            <p>Javascript (JQuery)</p>
+                            <p>TypeScript</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="server-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>Backend</h4>
+                            <p>PHP</p>
+                            <p>Node JS</p>
+                            <p>Python</p>
+                            <p>WordPress</p>
+                        </div>
+                    </article>
+                    <article class="card">
                         <img src="creativity-svgrepo-com.svg" alt="#">
                         <div class="service-text">
-                            <h4>creativity</h4>
-                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
+                            <h4>Frameworks</h4>
+                            <p>React</p>
+                            <p>Express.js</p>
+                            <p>Flask</p>
+                            <p>Django</p>
+                            <p>WordPress</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="database-svgrepo-com.svg" alt="#">
+                        <div class="service-text">
+                            <h4>Database</h4>
+                            <p>MYSQL</p>
+                            <p>MongoDB</p>
+                            <p>SQLite</p>
                         </div>
                     </article>
                     <article class="card">
                         <img src="design-ear-svgrepo-com.svg" alt="#">
                         <div class="service-text">
                             <h4>design</h4>
-                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
+                            <p>Bootstrap</p>
+                            <p>Material UI</p>
                         </div>
                     </article>
-                    <article class="card">
-                        <img src="gif-svgrepo-com (1).svg" alt="#">
-                        <div class="service-text">
-                            <h4>gif</h4>
-                            <p>Lorem ipsum dolor sit amet. aveaj habeu</p>
-                        </div>
-                    </article>                   
+
                 </div>
             </div>
         </section>
@@ -226,23 +374,31 @@
     <!-- footer -->
     <footer>
         <p>Copyright &copy;2024 All rights reserved | Education purposes only</p>
+        <p>
+            Contact:
+            <a href="mailto:ryotaoki0@gmail.com">ryotaoki0@gmail.com</a>
+        </p>
     </footer>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         AOS.init();
 
         // when fixed-btn clicked the screen going back to top
-        $(".fixed-btn").on("click",function(){
-            $("html, body").animate({scrollTop: 0}, 600);
+        $(".fixed-btn").on("click", function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
         })
 
         // the fixed-btn doesnt display when the screen is > 450
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 450){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
                 // on css need to add display none
                 $(".fixed-btn").fadeIn();
             } else {
@@ -251,34 +407,29 @@
         })
 
         // popup video1
-        $(".movie").on("click",function(e){
+        $(".movie").on("click", function (e) {
             e.preventDefault();
             $(".popup-background").fadeIn();
             $("body").addClass("popup-is-open");
         })
 
         // close popup-background
-        $(".popup-background").on("click",function(){
+        $(".popup-background").on("click", function () {
             $(".popup-background").fadeOut();
             $("body").removeClass("popup-is-open");
         })
 
         // only poopup-background is clickable to close
-        function preventBubbling(event){
-			event.stopPropagation();
+        function preventBubbling(event) {
+            event.stopPropagation();
 
-		}
+        }
 
         // when burger is clicked display the menu holder
-        $(".burger").on("click",function(){
+        $(".burger").on("click", function () {
             $(".menu-holder").slideToggle()
         })
-
-
-
-
-
-      </script>
+    </script>
 </body>
 
 </html>

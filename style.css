@@ -409,7 +409,7 @@ footer p{
 }
 
 .gallery-card:nth-of-type(6) .gallery-image{
-    background-image: url(https://i.pinimg.com/originals/47/32/3f/47323f3814100312de9fd64b48d0cef5.gif);
+    background-image: url(./photo/SpellingBee.png);
 }
 
 .gallery-text{
@@ -430,6 +430,15 @@ footer p{
     color: #6c6c6c;
 }
 
+/* backend gallery */
+
+.backend-image{
+    background-image: url(./photo/PetHouse.png);
+}
+
+.gallery-card:nth-of-type(2) .backend-image{
+    background-image: url(./photo/foodsite.png);
+}
 /* service */
 
 .service{
@@ -626,6 +635,12 @@ footer p{
     section{
         padding: 40px 0px;
     }
+    .about-btn{
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-size: 17px;
+    
+}
 
     /* nav bar */
 
