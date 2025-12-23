@@ -439,6 +439,10 @@ footer p{
 .gallery-card:nth-of-type(2) .backend-image{
     background-image: url(./photo/foodsite.png);
 }
+
+.gallery-card:nth-of-type(3) .backend-image{
+    background-image: url(./photo/CustomKeyboardCollective.png);
+}
 /* service */
 
 .service{
